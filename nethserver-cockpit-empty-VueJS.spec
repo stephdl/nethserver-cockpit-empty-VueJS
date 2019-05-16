@@ -37,8 +37,17 @@ cp -a %{name}.json %{buildroot}/usr/share/cockpit/nethserver/applications/
 cp -a api/* %{buildroot}/usr/libexec/nethserver/api/%{name}/
 chmod +x %{buildroot}/usr/libexec/nethserver/api/%{name}/*
 
-%{genfilelist} %{buildroot} $RPM_BUILD_ROOT > e-smith-%{version}-filelist
+%{genfilelist} %{buildroot} \
+$RPM_BUILD_ROOT > e-smith-%{version}-filelist
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files -f e-smith-%{version}-filelist
+%defattr(-,root,root)
+%doc COPYING
+
+# Enable to create event link with createlinks
 #%dir %{_nseventsdir}/%{name}-update
 
 %changelog

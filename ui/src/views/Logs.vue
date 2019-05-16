@@ -2,7 +2,7 @@
     <div>
         <h2>{{$t('logs.title')}}</h2>
         <h3>
-            <pre id="log-file" class="monospace m-right-sm">{{!view.follow ? 'tail -'+view.lines+' /var/log/fail2ban.log' : 'tail -f /var/log/fail2ban.log'}}</pre>
+            <pre id="log-file" class="monospace m-right-sm">{{!view.follow ? 'tail -'+view.lines+' /var/log/messages' : 'tail -f /var/log/messages'}}</pre>
             <button @click="handleLogs()" class="btn btn-primary">{{view.follow ? $t('logs.stop_follow') : $t('logs.follow')}}</button>
         </h3>
         <div v-if="!view.logsLoaded" id="loader" class="spinner spinner-lg view-spinner"></div>

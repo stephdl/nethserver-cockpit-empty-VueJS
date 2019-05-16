@@ -1,0 +1,23 @@
+{
+    "id": "nethserver-cockpit-empty-VueJS",
+    "name": "Application",
+    "summary": "Nethserver integration of Your amazing application",
+    "description": "Nethserver integration of Your amazing application",
+    "url": "",
+    "homepage": "https://github.com/NethServer/nethserver-cockpit-empty-VueJS",
+    "provides": ["nethserver-cockpit-empty-VueJS"],
+    "release": {
+        "version": "1.0.0"
+    },
+    "tags": ["tag1", "tag2", "tag3"],
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/NethServer/dev/issues"
+    },
+    "author": {
+        "name": "linus torvald",
+        "url": "https://github.com/NethServer/nethserver-cockpit-empty-VueJS",
+        "email": "linus@torvald.com"
+    },
+    "icon": "logo.png"
+}

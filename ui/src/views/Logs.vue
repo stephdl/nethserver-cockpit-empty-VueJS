@@ -40,7 +40,7 @@ export default {
           action: this.view.follow ? "follow" : "dump",
           lines: this.view.follow ? null : this.view.lines,
           mode: "file",
-          paths: ["/var/log/fail2ban.log"]
+          paths: ["/var/log/messages"]
         },
         this.view.follow
           ? function(stream) {

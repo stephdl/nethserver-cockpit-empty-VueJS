@@ -9,6 +9,8 @@ In Short
 
 git clone git@github.com:NethServer/nethserver-cockpit-empty-VueJS.git your-own-module
 
-./prep-sources
+you might need to remove ui/dist and ui/node_modules if the pre-sources fails the first time.
 
-make-rpms *.spec
+`./prep-sources`
+
+`make-rpms *.spec`

@@ -40,7 +40,8 @@ export default {
           action: this.view.follow ? "follow" : "dump",
           lines: this.view.follow ? null : this.view.lines,
           mode: "file",
-          paths: ["/var/log/messages"]
+          paths: ["/var/log/messages"],
+          filter: ""
         },
         this.view.follow
           ? function(stream) {

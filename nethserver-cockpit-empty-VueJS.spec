@@ -47,6 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f e-smith-%{version}-filelist
 %defattr(-,root,root)
 %doc COPYING
+%attr(0440,root,root) /etc/sudoers.d/50_nsapi_nethserver_cockpit_empty_VueJS
 
 # Enable to create event link with createlinks
 #%dir %{_nseventsdir}/%{name}-update

@@ -1,0 +1,10 @@
+
+#
+# nsapi_nethserver_cockpit_empty_VueJS
+#
+Cmnd_Alias NSAPI_NETHSERVER_AWSTATS = \
+     /usr/libexec/nethserver/api/nethserver-cockpit-empty-VueJS/read \
+     /usr/libexec/nethserver/api/nethserver-cockpit-empty-VueJS/validate \
+     /usr/libexec/nethserver/api/nethserver-cockpit-empty-VueJS/update
+
+Defaults!NSAPI_NETHSERVER_COCKPIT_EMPTY_VUEJS !requiretty
